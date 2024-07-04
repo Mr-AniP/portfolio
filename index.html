@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio_Animesh_Pareek</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0e4de48862.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- home -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#interest">Interests</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-text">
+                <p class="headerp-tile">Electronics + ML Engineer</p>
+                <h1>Animesh<span> Pareek</span></h1>
+                <i>
+                    <p>Let it be Electronics or Programming, <br>I am always ready to learn new things.</p>
+                    
+                </i>
+                <p >A Delhiite who loves solving chalenging Problems 🧠🤖💻</p>
+                <!-- <ul>
+                    <li><img src="images/linkd.png" class="logo1"></li>
+                    <li><img src="images/mail.png" class="logo1"></li>
+                    <li><img src="images/git.png" class="logo1"></li>
+                    <li><img src="images/insta.png" class="logo1"></li>
+                    <li><img src="images/twitter.png" class="logo1"></li>
+                </ul> -->
+            </div>
+        </div>
+        <!-- about -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col_1">
+                        <img src="images/about.jpg" class="about-img">
+                    </div>
+                    <div class="col_2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="about-text">I am a 4rd year student at IIITD, New Delhi.I am a passionate learner and always ready to learn new things. I dive into CA, DL, and graph algos.</p>
+                            <p class="about-text">I am a quick learner and always ready to take up new challenges. Passionate about building innovative solutions, I enjoy researching, playing chess and football, and collaborating with like-minded individuals.
+                        </p>
+                        <div class="about-subtitle">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="skills">
+                            <ul>
+                                <li><span>ML/DL</span><br>Enjoy building DL based models</li>
+                                <li><span>Parralel Programming</span><br>Programming on Multicore Systems</li>
+                                <li><span>Backend development</span><br>Expert at backend art of the projects</li>
+                                <li><span>Game & Web Development</span><br>Developing games and websites for fun </li>
+                                <li><span>Embedded Programing</span><br>Programming of hardware devices</li>
+                                <li><span>Verilog and Chip Designing</span><br>RTL to GDS flow of a logic</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li><span>Nov 2023 - Dec 2023</span><br>Research Internship at Algorithms to Architecture Labs IIITD</li>
+                                <li><span>May 2023 - Aug 2023</span><br>Research Internship at Algorithms to Architecture Labs IIITD</li>
+                                <li><span>Nov 2022 - Dec 2022</span><br>Teaching Assistant at IIITD</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content " id="education">
+                            <ul>
+                                <li><span>2021 - Current</span><br>Pursuing BTech in ECE and minor in Finance at IIITD, Delhi</li>
+                                <li><span>2020-2021</span><br>Completed my Class 12 at Don Bosco School, New Delhi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Intrests -->
+        <div id="interest">
+            <div class="container">
+                <h1 class="sub-title">My Interests</h1>
+                <div class="intrest-list">
+                    <div>
+                        <!-- <img src="images/chip.jpg" class="chip"> -->
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>AI Accelerated Hardware</h2>
+                        <p>Inspired to blend my electronics knowledge with state-of-the-art ML models and reinforcement learning to address next-generation problems</p>
+                        <a href="https://github.com/Mr-AniP">Laern More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Software Development</h2>
+                        <p>Inspired to leverage my skills in software development to tackle innovative challenges, driving forward-thinking solutions</p>
+                        <a href="https://github.com/Mr-AniP">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Gaming and Algorithm Design</h2>
+                        <p>Passionate about playing and developing games, with a strong proficiency in implementing algorithms to solve problems</p>
+                        <a href="https://github.com/Mr-AniP">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list active-list" id="wl0">
+                    <div class="work ">
+                        <img src="images/work-1.jpg">
+                        <div class="layer">
+                            <h3>Game Galaxy</h3>
+                            <br>
+                            <p>Developed an Online Retailstore using DBMS concepts</p>
+                            <a href="https://github.com/Unalome81/Game_Galaxy"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work" >
+                        <img src="images/work-2.jpg">
+                        <div class="layer">
+                            <h3>Network On Chip</h3>
+                            <br>
+                            <p>Developed a NOC from scratch to GDS</p>
+                            <a href="https://github.com/Mr-AniP/NOC_VDF"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.jpg">
+                        <div class="layer">
+                            <h3>Tankstars Game</h3>
+                            <br>
+                            <p>Developed a 1v1 Tank face off Game in Java</p>
+                            <a href="https://github.com/Mr-AniP/Tankstars_ap_project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-list"id="wl1">
+                    <div class="work">
+                        <img src="images/work-4.jpeg">
+                        <div class="layer">
+                            <h3>RISC-V CPU Simulator</h3>
+                            <p>Developed a cycle accurate simlator for a 5 staged pipelined RISC-V CPU</p>
+                            <a href="https://github.com/Vaibtan/CSE511_CA_project"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-5.jpg">
+                        <div class="layer">
+                            <h3>PRMP_HPC Runtime</h3>
+                            <p>Developed a task-based parallel programming mode</p>
+                            <p>NOT AN OPEN SOURCE PROJECT</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-6.jpeg">
+                        <div class="layer">
+                            <h3>Joke Recommendation System</h3>
+                            <p>Developed a Joke recomender, trained on Jester dataset</p>
+                            <a href="https://github.com/guptasameer112/Jokes-Recommendation-System"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-list" id="wl2">
+                    <div class="work">
+                        <img src="images/work-7.gif">
+                        <div class="layer">
+                            <h3>MAB on SOC - BTP</h3>
+                            <p>Integrating DL with RL for improved performance and then testing it on MPSOC</p><p> AN OPEN SOURCE PROJECT</p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-8.png">
+                        <div class="layer">
+                            <h3>A SPY Device</h3>
+                            <p>Developed an Integrated Electronic Circuit based Spy Device</p>
+                            <!-- <a href="#">NOT AN OPEN SOURCE PROJECT</a> -->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-9.jpg">
+                        <div class="layer">
+                            <h3>Radar Signal Processing</h3>
+                            <p>Developed a RSP project on APSOC using FPGA</p>
+                            <a href="https://github.com/Mr-AniP/RSP"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    <p class="btn active-btn" onclick="show_work()">See More</p>
+                    <p class="btn" onclick="hide_work()">See Less</p>
+                </div>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>Feel free to reach out to me for any queries or collaborations</p>
+                        <p><i class="fa-solid fa-paper-plane"></i>animesh21131@iiitd.ac.in</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9354738734</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/animesh-pareek-579132283/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Mr-AniP"><i class="fa-brands fa-square-github"></i></a>
+                            <a href="https://www.instagram.com/animeshp_19/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://x.com/pareek_ani55990"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        </div>
+                        <a href="resume/My_CV.pdf" download class="btn active-btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn active-btn btn2">Submit</button>
+                        </form>
+                        <span id="message"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Animesh Pareek All Rights Reserved</p>
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsByClassName('tab-links');
+            var tabcontents=document.getElementsByClassName('tab-content');
+            var worklist=document.getElementsByClassName('work-list');
+            var i =0;
+            function opentab(tabname){
+                for(link of tablinks){
+                    link.classList.remove("active-link");
+                }
+                for(tab of tabcontents){
+                    tab.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            function show_work(){
+                if(i==2) return;
+                worklist[i+1].classList.add("active-list");
+                i++;
+                document.getElementsByClassName('btn')[1].classList.add("active-btn");
+                if(i==2)
+                    document.getElementsByClassName('btn')[0].classList.remove("active-btn");
+            }
+            function hide_work(){
+                if(i==0) return;
+                while(i>0){
+                    worklist[i].classList.remove("active-list");
+                    i--;
+                }
+                document.getElementsByClassName('btn')[0].classList.add("active-btn");
+                if(i==0)
+                    document.getElementsByClassName('btn')[1].classList.remove("active-btn");
+            }
+        </script>
+        <!--  -->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxME5pacNPI8yakz2svNFuawf9KFzV1M_vUq-BEx3tkv3fC94xWFg3KMWdlm0823Zzr/exec';
+            const form = document.forms['submit-to-google-sheet']
+            const message = document.getElementById("message")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    message.innerHTML="Message sent successfully";
+                    setTimeout(function(){
+                        message.innerHTML="";
+                    },5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
