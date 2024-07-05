@@ -14,23 +14,25 @@
             <div class="container">
                 <nav>
                     <img src="images/logo.png" class="logo">
-                    <ul>
+                    <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#interest">Interests</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
                 </nav>
             </div>
             <div class="header-text">
                 <p class="headerp-tile">Electronics + ML Engineer</p>
-                <h1>Animesh<span> Pareek</span></h1>
+                <h1> Animesh <span>Pareek</span> </h1>
                 <i>
-                    <p>Let it be Electronics or Programming, <br>I am always ready to learn new things.</p>
+                    <p>Let it be Electronics or Programming, <br>I am always ready to learn new things. <br> <br>I love solving challenging Problems<span class="big">🧠🤖</span></p>
                     
                 </i>
-                <p >A Delhiite who loves solving chalenging Problems 🧠🤖💻</p>
                 <!-- <ul>
                     <li><img src="images/linkd.png" class="logo1"></li>
                     <li><img src="images/mail.png" class="logo1"></li>
@@ -49,8 +51,7 @@
                     </div>
                     <div class="col_2">
                         <h1 class="sub-title">About Me</h1>
-                        <p class="about-text">I am a 4rd year student at IIITD, New Delhi.I am a passionate learner and always ready to learn new things. I dive into CA, DL, and graph algos.</p>
-                            <p class="about-text">I am a quick learner and always ready to take up new challenges. Passionate about building innovative solutions, I enjoy researching, playing chess and football, and collaborating with like-minded individuals.
+                        <p class="about-text">I am a 4rd year student at IIITD, New Delhi. Being a passionate learner, I dive into concepts of Computer Architecture, Deep Learning and Algorithms. Passionate about building innovative solutions, I enjoy researching, playing chess and football, and collaborating with like-minded individuals.
                         </p>
                         <div class="about-subtitle">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -69,6 +70,7 @@
                         </div>
                         <div class="tab-content" id="experience">
                             <ul>
+                                <li><span>Jul 2024 - Preset</span><br> Corporate Internship in ADAS Team at Novus Hi-Tech, Gurgaon</li>
                                 <li><span>Nov 2023 - Dec 2023</span><br>Research Internship at Algorithms to Architecture Labs IIITD</li>
                                 <li><span>May 2023 - Aug 2023</span><br>Research Internship at Algorithms to Architecture Labs IIITD</li>
                                 <li><span>Nov 2022 - Dec 2022</span><br>Teaching Assistant at IIITD</li>
@@ -209,7 +211,7 @@
                         <h1 class="sub-title">Contact Me</h1>
                         <p>Feel free to reach out to me for any queries or collaborations</p>
                         <p><i class="fa-solid fa-paper-plane"></i>animesh21131@iiitd.ac.in</p>
-                        <p><i class="fa-solid fa-phone"></i>+91 9354738734</p>
+                        <!-- <p><i class="fa-solid fa-phone"></i>+91 9354738734</p> -->
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/animesh-pareek-579132283/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/Mr-AniP"><i class="fa-brands fa-square-github"></i></a>
@@ -284,6 +286,14 @@
                 })
                 .catch(error => console.error('Error!', error.message))
             })
+        </script>
+        <script>
+            function openmenu(){
+                document.getElementById("sidemenu").style.right="0px";
+            }
+            function closemenu(){
+                document.getElementById("sidemenu").style.right="-150px";
+            }
         </script>
     </body>
 </html>

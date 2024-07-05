@@ -17,9 +17,10 @@ body{
     background-image: url(images/bg.png);
     background-size:cover;
     background-position:center;
+    background-attachment: fixed;
 }
 .container{
-    padding: 15px 4%;
+    padding: 10px 4%;
 }
 nav {
     display: flex;
@@ -51,6 +52,9 @@ nav ul li a::after{
     left:0;
     bottom:-6px;
     transition: 0.5s;
+}
+nav .fa-solid{
+    display: none;
 }
 nav ul li a:hover::after{
     width: 100%;
@@ -123,6 +127,7 @@ nav ul li a:hover::after{
 .about-text{
     font-size: 15px;
     margin-top: 5px;
+    color: #fff;
 }
 .tab-links{
     margin-right: 30px;
@@ -148,7 +153,6 @@ nav ul li a:hover::after{
 .tab-content ul li{
     list-style:none;
     margin:10px 0;
-
 }
 .tab-content ul li span{
     color: #b54769;
@@ -373,10 +377,81 @@ form .btn2{
     display: block;
 }
 /*===============================fix small screens============================== */
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+    .big{
+        display:none;
+    }
     #header{
-        width: 100%;
-        height: 100vh;
+        /* width: 100%;
+        height: 80vh; */
         background-image: url(images/bg_mobile.png);
     }
-} */
+    .header-text{
+        margin-left: 5%;
+        margin-top: 65%;
+        font-size: 13px;
+    }
+    .header-text h1{
+        margin-right: 50%;
+        font-size: 29px;
+    }
+    .header-text p{
+        margin-top: 4%;
+        font-size: 15px;
+    }
+    .headerp-tile{
+        font-size: 18px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul li a{
+        color:#fff;
+    }
+    nav ul{
+        background:#ff004f;
+        position :fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display:block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top : 25px;
+        left : 25px;
+        cursor: pointer;
+    }
+    #about{
+        padding: 60px 0;
+    }
+    .sub-title{
+        margin-top: 30px;
+        font-size: 40px;
+    }
+    .row{
+        margin-top:0%;
+    }
+    .col_1{
+        flex-basis: 100%;
+    }
+    .col_2{
+        font-size: 14px;
+        flex-basis: 100%;
+    }
+    .tab-links{
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+}
